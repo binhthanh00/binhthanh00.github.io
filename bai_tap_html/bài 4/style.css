@@ -1,0 +1,15 @@
+body{
+    color:#008888;
+    background-image: url("./images/anh1.jpg");
+    background-size: 150px 200px;
+    background-repeat: repeat;
+}
+h2{
+    text-align:center;
+}
+.first{
+    background-color: #339999;
+    color:#FFFFFF;
+    font-weight: bolder;
+    font-style:Italic;
+}
