@@ -1,0 +1,28 @@
+#p1{
+    color: red;
+}
+#p0{
+    color:red;
+}
+.pinkclass{
+    color:blue;
+}
+#firstp{
+    color: blue;
+    font-weight: bold;
+    border: 1px solid black;
+    width:50px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 15px;
+    background-color:red ;
+    margin: 20px;
+}
+body{
+    border: 1px solid green;
+}
+#b1, #b2, #b3{
+    display: inline;
+}
