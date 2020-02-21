@@ -1,0 +1,14 @@
+h2{
+    color:#FFCC00;
+    text-align: center;
+}
+body{
+    color:#FFFFFF;
+    background-image: url("./images/vlth.jpg");
+    background-color:#A06D21 ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 300px;
+    background-attachment: fixed;
+
+}
