@@ -1,0 +1,25 @@
+body{
+    font-family: Tahoma;
+    font-size: 12px;
+}
+h1{
+    color:#CC0033;
+    text-align: center;
+}
+table,tr,td{
+    border:1px solid pink;
+}
+table{
+    border-collapse: collapse;
+}
+.row1, .row2{
+    color:#FFFFFF;
+    background-color: #CC0033;
+    font-weight: bold;
+    text-align: center;
+}
+.row3, .row4{
+    color: #CC0033;
+    font-weight: bold;
+    text-align: center;
+}

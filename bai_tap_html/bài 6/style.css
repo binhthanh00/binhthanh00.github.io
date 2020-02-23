@@ -1,0 +1,22 @@
+h2{
+    text-align:center;
+    color:#FF6633;
+    border: double;
+}
+.class1{
+    text-align: left;
+}
+.class2{
+    text-align:right;;
+    background-color:#FF6633;
+    color:#FFFFFF;
+    font-size:20px;
+    
+}
+.class3{
+    text-align: right;
+    
+}
+font{
+    color:#FF0000;
+}
