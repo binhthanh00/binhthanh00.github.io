@@ -3,72 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tạo frame</title>
-    <style>
-        .header
-        {
-            width: 100%;
-            height: 50px;
-            background-color:#003399;
-            color: #FFFFFF;
-            text-align: center;
-            line-height: 50px;
-        }
-        .content
-        {
-            width: 100%;
-            height: 450px;
-            
-        }
-        .content-left
-        {
-            width: 40%;
-            height:100% ;
-            background-color: #DEF0FA;
-            float: left;
-        }
-        .content-right
-        {
-            width: 60%;
-            height: 100%;
-            float: left;
-        }
-
-    </style>
+    <title>Tạo iframe</title>
 </head>
+<style>
+    
+
+    .th,table{
+        border-left: 2px solid black;
+        border-top: 2px solid black;
+    }
+</style>
 <body>
-    <div class="header">
-        <h1>Bài tập Ngôn Ngữ HTML</h1>
-    </div>
-    <div class="content">
-        <div class="content-left">
-            <ul>
-                <li><a href="#">Bai 01-Các tag cơ bản</a></li>
-                <li><a href="#">Bai 02-Các tag cơ bản,có định dạng</a></li>
-                <li><a href="#">Bai 03-Định dạng trang web</a></li>
-                <li><a href="#">Bai 04-Định dạng trang web(tt)</a></li>
-                <li><a href="#">Bai 05-Định dạng văn bản</a></li>
-                <li><a href="#">Bai 06-Định dạng văn bản(tt)</a></li>
-                <li><a href="#">Bai 07-Hình ảnh,liên kết,danh sách và ký tự đặc biệt</a></li>
-                <li><a href="#">Bai 08-Tạo bảng</a></li>
-                <li><a href="#">Bai 09-Tạo bảng có trộn dòng và cột</a></li>
-                <li><a href="#">Bai 10-Tạo bảng,trộn cột và dòng(tt)</a></li>
-                <li><a href="#">Bai 11-Tạo form và các điều khiển</a></li>
-                <li><a href="#">Bai 12-Tạo form và các điều khiển (tt)</a></li>
-                <li><a href="#">Bai 13-Tạo form và các điều khiển (tt)</a></li>
-            </ul>
-        </div>
-        <div class="content-right">
-            <center>
-                <h1>Bài 01:Sử dụng các tag cơ bản</h1>
-            </center>
-            <h2><u>Yêu cầu:</u></h2>
-            <h3>Thiết kế trang web có nội dung như sau:</h3><br>
-            <center>
-                <p>Lập trình Web</p>
-                <p>Chào mừng các bạn đến với ngôn ngữ HTML.</p>
-            </center>
-        </div>
-    </div>
+    <table width="100%" >
+        <tr style="background-color: blue;">
+            <td colspan="2">
+                <h1 style=" text-align :center ;color:#ffffff">Bài Tập NGÔN NGỮ HTML</h1>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: #DEF0FA;">
+                <ul type="square">
+                    <li><a href="../bài 1/index.html" target="hello">Bai 01 - Các tag cơ bản</a></li>
+                    <li><a href="../bài 2/index.html" target="hello">Bai 02 - Các tag cơ bản có định dạng  </a></li>
+                    <li><a href="../bài 3/index.html" target="hello">Bai 03 - Định dạng trang web</a></li>
+                    <li><a href="../bài 4/index.html" target="hello">Bai 04 - Định dạng trang web (tt)</a></li>
+                    <li><a href="../bài 5/index.html" target="hello">Bai 05 - Định dạng văn bản</a></li>
+                    <li><a href="../bài 6/index.html" target="hello">Bai 06 - Định dạng văn bản tiếp theo</a></li>
+                    <li><a href="../bài 7/index.html" target="hello">Bai 07 - Hình ảnh, liên kết, danh sách và các ký tự đặc biệt</a></li>
+                    <li><a href="../bài 8/index.html" target="hello">Bai 08 - Tạo bảng</a></li>
+                    <li><a href="../bài 9/index.html" target="hello">Bai 09 - Tạo bảng có trộn dòng và cột</a></li>
+                    <li><a href="../bài 10/index.html" target="hello">Bai 10 - Tạo bảng có trộn dòng và cột(tt)</a></li>
+                    <li><a href="../bài 11/index.html" target="hello">Bai 11 - Tạo form và các điều khiển</a></li>
+                    <li><a href="../bài 12/index.html" target="hello">Bai 12 - Tạo form và các điều khiển (tt)</a></li>
+                    <li><a href="../bài 13/index.html" target="hello">Bai 13 - Tạo form và các điều khiển</a></li>
+                </ul>
+            </td>
+            <td>
+                <iframe src="../bài 1/index.html" name ="hello" height="500px" width="1300px">
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
