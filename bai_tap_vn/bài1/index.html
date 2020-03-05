@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            text-align: right;
+        } 
+        
+        }
+         table{
+            
+            width:auto;
+        
+        } 
+    </style>
+</head>
+<body >
+    <table>
+        <tr>
+            <td class="text">
+                First Name
+            </td>
+            <td colspan="2">
+                <input type="text" id="first name" size="50">
+            </td>
+        </tr>
+        <tr>
+            <td class="text">
+                Last Name
+            </td>
+            <td colspan="2">
+                <input type="text" id="last name" size="50">
+            </td>
+        </tr>
+        <tr>
+            <td class="text"> Home Run</td>
+            <td colspan="2"> 
+                <select name="home run" id="home run" >
+                    <option value="home run" >Home run</option>
+                    <option value="yakun"> Yakun</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="text" >Gender</td>
+            <td  colspan="2">
+                <input type="radio" id="male" >Male
+                <br>
+                <input type="radio" id="male">Famale
+            </td>
+        </tr>
+        <tr>
+            <td class="text">Date of Birth</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td  class="text" width="50%">
+                Running Club (Optional) Unattached
+            </td>
+            <td colspan="2" >
+                <input type="submit" value="Select club">
+            </td>
+        </tr>
+        <tr>
+            <td class="text"> Email</td>
+            <td colspan="2"><input type="email" size="70"></td>
+        </tr>
+        <tr>
+            <td class="text">Confirm Email</td>
+            <td colspan="2">
+                <input type="email" size="70">
+            </td>
+
+        </tr>
+        <tr>
+            <td class="text">Postcode</td>
+            <td colspan="2"><input type="number" max="100" min="0" ></td>
+        </tr>
+        <tr>
+            <td class="text">I would like to be sent news about parkrun </td>
+            <td colspan="2">
+                <input type="radio" id="wh">
+                <label for="wh">Yes</label>
+                <br>
+                <input type="radio" id="wh">
+                <lable for="wh" >No</lable>
+            </td>
+        </tr>
+      <tr>
+            <td class="text">
+                Over the last 4 weeks<br>
+                how often have you done <br> 
+                at least 30 minutes of moderate exercise<br>
+                (enough to rase your breathing rate)?
+            </td>
+            <td colspan="2">
+                <select name="often" id="often" >
+                    <option value="20 minutes">20 minutes</option>
+                    <option value="30 minutes">30 minutes</option>
+                    <option value="40 minutes">40 minutes</option>
+               </select>
+            </td>
+        </tr> 
+        <tr>
+            <td class="text">
+                Please briefly list any medical conditions<br>
+                 you have, that a first aider should  <br>
+                know about, in the case of an emergency.<br>
+                 if none, please state 'None'
+            </td>
+            <td colspan="2">
+                <textarea id="note" rows="5" cols="50"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td class="text">Who should we contact in Case of Emergency</td>
+            <td colspan="2"><input type="text" size="50"></td>
+        </tr>
+        <tr>
+            <td class="text">and What is their contact number?</td>
+            <td colspan="2"> <input type="text" size="50"></td>
+        </tr>
+        <tr>
+            <td class="text">I accept the terms & conditions (see below)</td>
+            <td colspan="2"> <input type="checkbox" id="confirm" name="confirm"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"><input type="submit" value="Check Form" id="check Form" onclick="onSubmit()"></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;"><p id="show-success" style="color: red;display: none;">Bạn đã đăng ký thành công</p></td>
+        </tr>
+    </table>
+    <script>
+        function onSubmit(){
+            event.preventDefault();
+            var pSuccess=document.getElementById("show-success")
+            pSuccess.style.display="block";
+            pSuccess.style.color="red";
+
+        }
+    </script>
+</body>
+</html>

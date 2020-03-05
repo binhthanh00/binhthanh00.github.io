@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-table table,.my-table  tr,.my-table tr td{
+            border : 1px solid black;
+            border-collapse: collapse;
+        
+        }
+    </style>
+</head>
+<body>
+    <!-- Phân biệt thẻ block và the inline -->
+    <p> This is paragraph</p>
+    <a href="">Facebook</a>
+    <a href="">Facebook</a>
+    <table class="my-table" cellspacing ="0">
+        <tr>
+            <td>#</td>
+            <td colspan="2">Infor</td>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td>NAME</td>
+            <td>CLASS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ngân</td>
+            <td rowspan="4">RJS</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bình</td>
+           
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Hà</td>
+            
+        </tr>
+        
+    </table>
+    <form action="login.php" method="GET">
+        <fieldset>
+            <legend > Login form</legend>
+        <lable for="">Username:</lable> 
+        <input type="text" id="username" placeholder="enter username">
+        <br>
+        <lable for="">Password:</lable>
+        <input type="password" id="password" placeholder="enter password">
+        <br>
+        <lable for="">Year of birth</lable>
+        <select name="yearofbirth" id="yearofbirth">
+            <option value="1">Tháng 1</option>
+            <option value="2">Tháng 2</option>
+            <option value="3">Tháng 3</option>
+            <option value="4">Tháng 4</option>
+        </select>
+        <br>
+        <lable for="">Last Name:</lable>
+        <select name="listname">List Name
+            <option value="1"> Nguyễn Văn A</option>
+            <option value="2"> Nguyễn Văn B</option>
+            <option value="3"> Nguyễn Văn C</option>
+            <option value="4"> Nguyễn Văn D</option>
+        </select>
+        <br>
+        <label for="">Nam</label>
+        <input type="radio" >
+        <label for="">Nữ</label>
+        <input type="radio" >
+        <br>
+        <label for="policy">Bạn có đồng ý với policy của chúng tôi</label>
+        <input type="checkbox" id="policy">
+        <br>
+        Choose Date
+        <input type="date" id="date" name="date" min="02-07-2015" max="02-03-2020">
+        <br>
+        Color pinker:
+        <input type="color" id="pinker" name="pinker">
+        <br>
+        Height :
+        <input type="number" id="height" name="height" min="1" max="5">
+        <br>
+        <input type="submit" value="submit2" id="submit2" onclick="  alert(' Hello class' ); ">
+        <input type="submit" value="submit" id="submit" onclick=" onSubmit()">
+        <p id="show-success" style="color:red;display:none;">Bạn đã đăng nhập thành công</p>
+    </fieldset>
+    </form>
+    <script>
+        function onSubmit(){
+            event.preventDefault() ;
+            var pSuccess=document.getElementById("show-success");
+            pSuccess.style.display = "block";
+            pSuccess.style.color = "red";
+
+        }
+    </script>
+    <!-- html layout -->
+    <header>
+        <h1> This is a </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a href="">Books</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
