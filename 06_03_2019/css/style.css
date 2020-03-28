@@ -1,0 +1,150 @@
+/* tag selector */
+p{
+    font-style:bold;
+}
+/* class selector */
+.big-size{
+    font-size:30px;
+}
+p.border-solid{
+    border :1px solid black;
+}
+/* id selector */
+#para1{
+    color:red;
+}
+#para2{
+    color:blue;
+}
+p[id]{
+    background-color: khaki;
+}
+p[class]{
+    border-right: 1px solid black;
+}
+p[class^="border-solid"]{
+    font-size: 50px;
+}
+p[class~=big-size]{
+    border-left: 3px solid black;
+}
+/* selector phân cấp */
+.block{
+    width:200px;
+    height:200px;
+}
+.bg-red{
+    background-color: red;
+}
+.sm-block{
+    width: 100px;
+    height: 100px;
+}
+.bg-blue{
+    background-color: blue;
+}
+.block p{
+    color:yellow;
+}
+.block >p{
+    border :1px solid black;
+}
+.block + div +.bg-red{
+    background-color: black;
+}
+ /* Pseudo-element  */
+ .custom-table{
+     width: 100%;
+     border-collapse: collapse;
+ }
+ .custom-table td{
+     border: 1px solid black;
+ }
+ td:first-child{
+     text-align: center;
+ }
+ td:nth-child(2){
+     color:blue;
+ }
+ td:last-child{
+     text-align: right;
+ }
+ a:hover{
+     color:red;
+ }
+ .my-input:focus{
+     width: 500px;
+ }
+ p.first-letter::first-letter{
+     color:red;
+     font-size:30px;
+ }
+ p.first-letter::first-line{
+    color:blue;
+    
+}
+.after-block::after{
+    content:"abcd" ;
+    display:block;
+    background-color: blue;
+}
+p.para4::after{
+    content: "after";
+}
+.border-1{
+    border: 1px solid;
+}
+/* position css */
+
+.position{
+    position: relative;
+ 
+}
+.child{
+    left:30px;
+    top:100px;
+}
+ .position-fix{
+    position: fixed;
+    bottom:0px;
+    right:0px;
+} 
+/* overflow */
+.overflow-block{
+    overflow: scroll;
+}
+.linear-gradient{
+    background-image:linear-gradient(red,blue) ;
+}
+/* transition */
+.my-transition{
+    position: relative;
+    transition: width 4s;
+
+}
+.my-transition:hover{
+    width:150px;
+}
+.my-input{
+    width: 50px;
+    transition: width 1s;
+}
+.my-input:focus{
+    width:300px;
+}
+/* animation */
+.my-animation{
+    position: relative;
+    transition: transform 1s;
+    animation: slide 2s ease 1s infinite backwards;
+}
+.my-animation:hover{
+    transform: rotate(360deg);
+    border-radius: 30%;
+    opacity: 0J QHM  1M;
+}
+@keyframes slide{
+0% {left:0px;}
+50%{left:100px}
+100% {left:0px;}
+}
