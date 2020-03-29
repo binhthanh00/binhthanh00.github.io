@@ -105,12 +105,47 @@
 }
 /* Header notification */
 .header__notify{
+    cursor: default;
     position: absolute;
     top:118%;
     right:0;
     width:404px;
     border:1px solid #d3d3d3;
-    background-color: var(--white-color)
+    background-color: var(--white-color);
+    transform-origin: calc(100%-20px) top  ;
+    animation: headerNotifyGrowth ease-in 0.2s;
+    /* -webkit-animation:headerNotifyGrowth ease-in 0.2s;  */
+    will-change: opacity, transform;
+    display:none;
+}
+.header__notify::before{
+    content:"";
+    border-width: 20px 27px;
+    border-style: solid ;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 4px;
+    top: -29px;
+}
+.header__notify::after{
+    content:"";
+    display:block;
+    position: absolute;
+    right:0;
+    top:-16px;
+    width:90px;
+    height:20px;
+}
+@keyframes headerNotifyGrowth{
+    from{
+        opacity: 0;
+        transform:scale(0);
+    }
+    to{
+        opacity: 1;
+        transform:scale(1);
+
+    }
 
 }
 .header__notify-header{
@@ -124,6 +159,8 @@
     font-weight:400;
     font-size:1.4rem;
     line-height:40px;
+    user-select: none;
+    
 }
 .header__notify-list{
     padding-left:0;
@@ -134,6 +171,10 @@
 }
 .header__notify-item:hover{
     background-color: #f7f7f7;
+}
+.header__navbar-item--has-notify:hover .header__notify{
+    display:block;
+
 }
 .header__notify-item--viewed{
     background-color: rgba(238, 75, 43, 0.08);
@@ -156,8 +197,9 @@
 .header__notify-name{
     display:block;
     font-size:1.4rem;
-    color:var(--black-color);
+    color:var(--text-color);
     font-weight: 400;
+    line-height: 1.8rem;
 
 }
 .header__notify-descriotion{
@@ -165,14 +207,19 @@
     font-size:1.2rem;
     line-height: 1.6rem;
     color:#756F6E;
+    margin-top: 4px;
 
 }
 .header__notify-footer{
-    text-align:center;
+    display: flex;
 }
 .header__notify-footer-btn{
     text-decoration: none;
     color: var(--text-color);
-    padding: 4px 16px;
+    padding: 8px 38px;
+    margin:auto;
+    font-size:1.4rem;
+    font-weight:400;
+
 
 }
