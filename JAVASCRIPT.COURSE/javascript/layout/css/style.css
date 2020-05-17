@@ -1,0 +1,11 @@
+.block{
+    width: 100px;
+    height: 100px;
+}
+.block__red{
+    background-color: red;
+}
+.position__ralative{
+    position: relative;
+    
+}

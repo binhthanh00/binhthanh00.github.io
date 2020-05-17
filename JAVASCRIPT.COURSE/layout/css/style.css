@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: aqua;
+}
+nav{
+    background-color: blueviolet;
+}
+section{
+    background-color: chartreuse;
+}
+aside{
+    /* width: 25%;
+    float: left; */
+    background-color: cornflowerblue;
+}
+article{
+    /* width: 75%;
+    height: 200px; */
+    /* float: right; */
+    background-color: darkgoldenrod;
+}
+footer{
+    /* clear: both; */
+    background-color: darksalmon;
+}
