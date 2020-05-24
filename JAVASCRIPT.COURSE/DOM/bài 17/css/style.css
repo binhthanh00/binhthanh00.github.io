@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+}
+.top{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    box-shadow: 0px 10px 20px black;
+    z-index: 999;
+}
+.btn{
+    margin-left: 200px;
+}
+.white{
+    float: left;
+    margin-left: 4px;
+    height: 500px;
+    width: 100px;
+   
+    box-shadow: inset 0px 0px 30px 20px white;
+    cursor: pointer;
+}
+.black, .black2, .black3, .black4, .black5, .black6, .black7{
+    position: absolute;
+    height: 350px;
+    width: 50px;
+    z-index: 99;
+    margin-top: 0px;
+    margin-left: -960px;
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 10px 5px gray;
+    background: black;
+    
+    cursor: pointer;
+}
+.black:active{
+    background: linear-gradient(to bottom, black 0%, gray 100% );
+}
+.black2{
+    margin-left: -850px;
+}
+.black2:active{
+    background: linear-gradient(to bottom, black 0%, gray 100%);
+}
+.black3{
+    margin-left: -650px;
+}
+.black3:active{
+    background: linear-gradient(to bottom, black 0%, gray 100%);
+}
+.black4{
+    margin-left: -540px;
+}
+.black4:active{
+    background: linear-gradient(to bottom, black 0%, gray 100%);
+}
+.black5{
+    margin-left: -440px;
+}
+.black5:active{
+    
+    background: linear-gradient(to bottom, black 0%, gray 100%);
+}
+.black6{
+    margin-left: -230px;
+}
+.black6:active{
+    background: linear-gradient(to bottom, black 0%, gray 100%);
+}
+.black7{
+    margin-left: -130px;
+}
+.black7:active{
+    background: linear-gradient(to bottom, black 0%, gray 100%);
+}
+
+ 
