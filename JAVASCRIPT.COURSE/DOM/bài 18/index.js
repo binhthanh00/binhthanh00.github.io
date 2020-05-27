@@ -1,0 +1,36 @@
+var one = new Audio ();
+var two = new Audio ();
+var three = new Audio ();
+var four = new Audio ();
+var five = new Audio ();
+var six = new Audio ();
+var seven = new Audio ();
+var eight = new Audio ();
+var nine = new Audio ();
+var ten = new Audio ();
+var blackone = new Audio ();
+var blacktwo = new Audio ();
+var blackthree = new Audio ();
+var blackfour = new Audio ();
+var blackfive = new Audio ();
+var blacksix = new Audio ();
+var blackseven = new Audio ();
+blackone.src = "./music/442980__pacway__do-c.m4a"
+blacktwo.src = "./music/442983__pacway__re-d.m4a"
+blackthree.src="./music/442977__pacway__mi-e.m4a"
+blackfour.src="./music/442979__pacway__fa-f.m4a"
+blackfive.src="./music/442981__pacway__sol-g (1).m4a"
+blacksix.src="./music/442978__pacway__la-a.m4a"
+blackseven.src="./music/442982__pacway__si-b.m4a"
+
+
+one.src = "./music/68448__pinkyfinger__piano-g.wav"
+two.src = "./music/68447__pinkyfinger__piano-g.wav"
+three.src = "./music/68446__pinkyfinger__piano-f.wav"
+four.src = "./music/68445__pinkyfinger__piano-f.wav"
+five.src = "./music/68444__pinkyfinger__piano-eb.wav"
+six.src = "./music/68443__pinkyfinger__piano-e.wav"
+seven.src = "./music/68442__pinkyfinger__piano-d.wav"
+eight.src = "./music/68441__pinkyfinger__piano-c.wav"
+nine.src = "./music/68440__pinkyfinger__piano-c.wav"
+ten.src = "./music/68439__pinkyfinger__piano-bb.wav"

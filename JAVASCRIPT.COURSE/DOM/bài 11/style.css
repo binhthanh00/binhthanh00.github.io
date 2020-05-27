@@ -2,6 +2,9 @@
     width: 600px;
     margin: auto;
   }
+  /* body{
+    background-color: dodgerblue;
+  } */
  
   * {
     box-sizing: border-box;
@@ -45,13 +48,13 @@
   }
    
   .close:hover {
-    background-color: #f44336;
+    background-color: #FF9933;
     color: white;
   }
    
   
   .header {
-    background-color: #f44336;
+    background-color: dodgerblue ;
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -75,8 +78,8 @@
   .addBtn {
     padding: 10px;
     width: 25%;
-    background: #d9d9d9;
-    color: #555;
+    background-color:#FF9966;
+    color: white;
     float: left;
     text-align: center;
     font-size: 16px;
@@ -85,5 +88,5 @@
   }
    
   .addBtn:hover {
-    background-color: #bbb;
+    background-color: #FF9933;
   }
