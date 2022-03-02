@@ -5,59 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPA</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+  />
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <div class="wrapper">
-        <!-- Start header -->
-        <div class="header">
-            <div class="container">
-                <div class="header_top">
-                    <a href="./index.html" class="header_logo">
-                        <img src="./images/logo.JPG"/>
-                    </a>
-                    <!-- <i class="fas fa-bars navbar_toggle"></i> -->
-                    <div class="nav">
-                        <!-- <i class="fas fa-times navbar_close"></i> -->
-                        <ul class="nav_list">
-                            <li class="nav_item"><a class="nav_link" href="#">Home</a></li>
-                            <li class="nav_item"><a class="nav_link" href="#">About</a></li>
-                            <li class="nav_item"><a class="nav_link" href="#">Feature</a></li>
-                            <li class="nav_item"><a class="nav_link" href="#">Service</a></li>
-                            <li class="nav_item"><a class="nav_link" href="#">Contact</a></li>
-                        </ul>
-                        
-                    </div>
-                    <!-- <div class="burger">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div> -->
-                </div>
-                <div class="header_content">
-                    <span class="header_content-sologan">
-                        SPA A BEAUTY CENTER
-                    </span>
-                    <h1 class="header_content-title" href="#">Beauty and success starts here</h1>
-                    <p class="header_content-text">
-                        Together creeping heaven upon this dominion be upon won't
-                        drankness rule be hold it created good saw after she'd out set living
-                    </p>
-                    <div class="header_content-btn">
-                        <a href="#" class="btn_reserver">RESERVER NOW
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                        <a href="#" class="btn_watch">
-                            <i class="fa fa-play"></i>
-                            Watch our story
-                        </a>
-                    </div>
-                </div>
-                <img src="./images/spa.png" class="header_image">
+        <header class="header">
+          <div class="container">
+            <div class="header_top">
+              <a href="index.html" class="header_logo">
+                <img src="./images/logo.png" alt="" />
+              </a>
+              <i class="fas fa-bars nav_collapse"></i>
+              <div class="nav">
+                <i class="fas fa-times nav_close"></i>
+                <ul class="nav_list">
+                  <li class="nav_item">
+                    <a href="#" class="nav_link">Home</a>
+                  </li>
+                  <li class="nav_item">
+                    <a href="#" class="nav_link">About</a>
+                  </li>
+                  <li class="nav_item">
+                    <a href="#" class="nav_link">Feature</a>
+                  </li>
+                  <li class="nav_item">
+                    <a href="#" class="nav_link">Images</a>
+                  </li>
+                  <li class="nav_item">
+                    <a href="#" class="nav_link">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
+            <div class="header_content">
+              <span class="header_content-slogan">Spa & Beauty Center</span>
+              <h1 class="header_content-title">
+                Beauty and success starts here.
+              </h1>
+              <p class="header_content-desc">
+                Together creeping heaven upon third dominion be upon won't
+                darkness rule behold it created good saw after she'd Our set
+                living.
+              </p>
+              <div class="header_content-btn">
+                <a href="#" class="btn btn--primary btn--icon"
+                  >Reverse now <i class="fa fa-arrow-right"></i
+                ></a>
+                <a href="" class="btn_play-video">
+                  <i class="fa fa-play"></i>
+                  <span>Watch our story</span>
+                </a>
+              </div>
+            </div>
+            <img src="./images/spa.png" alt="" class="header_image" />
+          </div>
+        </header>
         <!-- End header -->
         <!-- Start About -->
         <div class="about">
@@ -117,8 +125,8 @@
                         wherein were meat kind wherein and martcin    
                     </p>
                 </div>
-                <div class="popular_list">
-                    <div class="polular_item">
+                <ul class="popular_list">
+                    <li class="polular_item">
                         <a href="#" class="popular_link">
                             <image src="./images/popular1.jpg"/>
                             <h4>Message Therapy</h4>
@@ -127,32 +135,28 @@
                             </p>
                             <button class="popular_btn">READ MORE</button>
                         </a>
-                    </div>
-                    <div class="polular_item">
-                        <div class="polular_item">
-                            <a href="#" class="popular_link">
-                                <image src="./images/popular2.jpg"/>
-                                <h4>Message Therapy</h4>
-                                <p>Living winged said you darkness you are divide
-                                    gathered and bring one seasons face great dr waters firmament place which 
-                                </p>
-                                <button href="#" class="popular_btn">READ MORE</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="polular_item">
-                        <div class="polular_item">
-                            <a href="#" class="popular_link">
-                                <image src="./images/popular3.jpg"/>
-                                <h4>Message Therapy</h4>
-                                <p>Living winged said you darkness you are divide
-                                    gathered and bring one seasons face great dr waters firmament place which 
-                                </p>
-                                <button href="#" class="popular_btn">READ MORE</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                      </li>
+                      <li class="polular_item">
+                        <a href="#" class="popular_link">
+                            <image src="./images/popular3.jpg"/>
+                            <h4>Message Therapy</h4>
+                            <p>Living winged said you darkness you are divide
+                                gathered and bring one seasons face great dr waters firmament place which 
+                            </p>
+                            <button class="popular_btn">READ MORE</button>
+                        </a>
+                      </li>
+                      <li class="polular_item">
+                        <a href="#" class="popular_link">
+                            <image src="./images/popular2.jpg"/>
+                            <h4>Message Therapy</h4>
+                            <p>Living winged said you darkness you are divide
+                                gathered and bring one seasons face great dr waters firmament place which 
+                            </p>
+                            <button class="popular_btn">READ MORE</button>
+                        </a>
+                      </li>
+                </ul>
             </div>
         </div>
         <!-- End Popular -->
@@ -306,8 +310,8 @@
                     <div class="form_group">
                         <input class="input_single" type="text" placeholder="YOUR NOTES"/>  
                     </div>
-                    <div class="btn">
-                        <button>Make an Appointment</button>
+                    <div class="contact_btn">
+                        <button>Make An Appointment</button>
                     </div>
                 </form>
             </div>
@@ -325,7 +329,7 @@
                 <div class="popular_list">
                     <div class="polular_item">
                         <a href="#" class="popular_link">
-                            <image class="lastest_img" src="./images/popular2.jpg"/>
+                            <image class="lastest_img" src="./images/popular1.jpg"/>
                             <span  class="text_lastest">RELAXATION | JULY 03,2019</span>
                             <h4>Had seed herb grass mids</h4>
                             <p>
@@ -335,33 +339,29 @@
                         </a>
                     </div>
                     <div class="polular_item">
-                        <div class="polular_item">
-                            <a href="#" class="popular_link">
-                                <image class="lastest_img" src="./images/popular1.jpg"/>
-                                <span  class="text_lastest">RELAXATION | JULY 03,2019</span>
-                                <h4>Had seed herb grass mids</h4>
-                                <p>
-                                    She'd yielding seas green appear unto worne seas field most come mede do bad
-                                </p>
-                                <button href="#" class="popular_btn">READ MORE</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="polular_item">
-                        <div class="polular_item">
-                            <a href="#" class="popular_link">
-                                <image class="lastest_img" src="./images/popular3.jpg"/>
-                                <span class="text_lastest">RELAXATION | JULY 03,2019</span>
-                                <h4>Had seed herb grass mids</h4>
-                                <p>
-                                    She'd yielding seas green appear unto worne seas field most come mede do bad
-                                </p>
-                                <button href="#" class="popular_btn">READ MORE</button>
-                            </a>
-                        </div>
-                    </div>
+                      <a href="#" class="popular_link">
+                          <image class="lastest_img" src="./images/popular2.jpg"/>
+                          <span  class="text_lastest">RELAXATION | JULY 03,2019</span>
+                          <h4>Had seed herb grass mids</h4>
+                          <p>
+                              She'd yielding seas green appear unto worne seas field most come mede do bad
+                          </p>
+                          <button class="popular_btn">READ MORE</button>
+                      </a>
+                  </div>
+                  <div class="polular_item">
+                    <a href="#" class="popular_link">
+                        <image class="lastest_img" src="./images/popular3.jpg"/>
+                        <span  class="text_lastest">RELAXATION | JULY 03,2019</span>
+                        <h4>Had seed herb grass mids</h4>
+                        <p>
+                            She'd yielding seas green appear unto worne seas field most come mede do bad
+                        </p>
+                        <button class="popular_btn">READ MORE</button>
+                    </a>
                 </div>
             </div>
+        </div>
         </div>
         <!-- /* End Lastest */ -->
         <!-- Start Get In Touch -->
@@ -417,7 +417,7 @@
         <!-- Start Footer -->
         <div class="footer">
             <div class="footer_logo">
-                <img src="./images/logo.JPG"/>
+                <img src="./images/logo.png"/>
             </div>
             <ul class="footer_menu">
                 <li><a href="#">ABOUT</a></li>
