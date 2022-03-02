@@ -7,7 +7,7 @@ html {
     font-size: 62.5%;
   }
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Rufina', serif;
 
 }
 .wrapper{
@@ -100,6 +100,7 @@ body{
   font-size: 1.5rem;
   color: #777;
   margin-bottom: 5rem;
+  font-family: 'Roboto';
 }
 .header_content-btn {
   display: flex;
@@ -155,7 +156,8 @@ body{
   list-style: none;
 }
 .nav_link {
-  color: #999;
+  color: #000;
+  font-family: 'Roboto';
   font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -172,7 +174,7 @@ body{
   vertical-align: middle;
   border: 0;
   outline: none;
-  padding: 1.5rem 3rem;
+  padding: 1.7rem 2rem;
   text-align: center;
   color: white;
   text-transform: uppercase;
@@ -255,9 +257,12 @@ body{
   /* End header */
 
   /* Start About */
+  .about{
+    padding-top: 24rem;
+  }
   .about_inner{
       position: relative;
-      padding-top: 14rem;
+      padding-top: 3rem;
       padding-bottom: 14rem;
   }
   @media screen and (max-width: 767px) {
@@ -278,7 +283,7 @@ img.about_flower-botton {
     position: absolute;
     max-width: 7rem;
     right: 0;
-    top: 50%;
+    top: 40%;
     transform: translateY(-70%);
 }
 .about_content {
@@ -302,25 +307,28 @@ img.about_flower-botton {
 
 .about_content>h3 {
     font-weight: 100;
+    font-family: 'Roboto';
     color: #999;
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .about_content-heading {
-    max-width: 59.5rem;
+    /* max-width: 86rem; */
     margin: 0px auto;
-    padding-bottom: 3.5rem;
+    padding-bottom: 7rem;
     
 }
 .about_content-heading-text{
     font-size: 1.4rem;
+    max-width: 86rem;
     color: #999;
+    font-family: 'Roboto';
 }
 
 h2.about_content-heading-title {
     font-size: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 5rem;
 }
 a.about_btn {
     font-size: 1.4rem;
@@ -398,20 +406,22 @@ a.about_btn {
     margin-bottom: 14rem;
   }
   .popular_heading{
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
     text-align: center;
   }
   .popular_heading>h3{
     font-size: 4.2rem;
     font-weight: bold;
     margin-bottom: 3rem;
+    
   }
   .popular_heading>p{
     font-size: 1.2rem;
     line-height: 1.6;
-    max-width: 65rem;
+    max-width: 85rem;
     margin: 0 auto;
     color: #999;
+    font-family: 'Roboto';
   }
   .popular_list{
     display: flex;
@@ -442,20 +452,21 @@ a.about_btn {
      font-size: 2.2rem;
      margin-bottom: 3rem;
      margin-top: 5rem;
-     color: #999;
+     color: #000;
   }
   .popular_link>p{
     line-height: 2;
     margin-bottom: 4rem;
     color: #999;
     font-size: 1.4rem;
+    font-family: 'Roboto';
   }
   .popular_link>button{
-      padding: 1.2rem;
+      padding: 1.8rem 3.3rem;
       color: #fff;
       background-color: #000;
       border: 1px solid #fbf5ed;
-      border-radius: 2rem;
+      border-radius: 5rem;
       margin-top: 1.2rem;
       font-size: 1.2rem;
   }
@@ -481,7 +492,6 @@ a.about_btn {
     background: #fff9f8;
     padding: 2.4rem 0;
     margin-top: 6rem;
-    margin-bottom: 3rem;
   }
   .quote_inner{
     padding-top: 3rem;
@@ -495,8 +505,9 @@ a.about_btn {
   .quote_content{
     max-width: 96rem;
     text-align: center;
-    margin: 5px auto;
+    margin: 26px auto;
     padding-bottom: 2rem;
+    font-family: 'Roboto';
   }
   .quote_author{
     display: block;
@@ -525,6 +536,13 @@ a.about_btn {
   .quote_dots>li:hover{
     color: #ff817e;
     cursor: pointer;
+  }
+  @media screen and (max-width: 767px) {
+    .quote_content{
+      max-width: 45rem;
+    }
+     
+    
   }
   /* End Quote */
 
@@ -676,6 +694,7 @@ a.about_btn {
   .form_contact .form-group .custom-input,
   .form_contact .form-group input,
   .form_contact .form-group select {
+    color:#999;
     width: calc(50% - 1rem);
   }
   .form_contact .form-group .custom-input {
@@ -684,13 +703,7 @@ a.about_btn {
   .form_contact .form-group .custom-input input {
     width: 100%;
   }
-  .form_contact .form-group .custom-input i {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-  }
+
   .form_contact .form-single {
     margin-top: 8rem;
     margin-bottom: 4rem;
@@ -745,6 +758,7 @@ a.about_btn {
     .touch_form {
       width: 65%;
       padding-left: 12rem;
+      font-family: 'Roboto';
     }
   }
   .touch_form input,
@@ -786,6 +800,7 @@ a.about_btn {
     font-size: 1.4rem;
     text-transform: uppercase;
     color: #999;
+    font-family: 'Roboto';
   }
   .touch_text a {
     display: block;
@@ -811,17 +826,18 @@ a.about_btn {
 
   }
   .footer_menu{
-    margin: 4.5rem 0;
+    margin: 5rem 0;
     display: flex;
     justify-content: center;
+    font-family: 'Roboto';
   }
   .footer_menu>li{
     list-style: none;
    
   }
   .footer_menu>li>a{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     cursor: pointer;
     font-size: 2rem;
     text-decoration: none;
@@ -833,14 +849,14 @@ a.about_btn {
   .footer_social{
     display: flex;
     justify-content: center;
-    margin: 4.5rem 0;
+    margin: 5rem 0;
   }
   .footer_social li{
     list-style: none;
   }
   .footer_social li a{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     font-size: 2rem;
     text-decoration: none;
     color: #222;
@@ -849,7 +865,7 @@ a.about_btn {
   }
   
   .footer_botton{
-    margin: 3rem auto;
+    margin: 1rem auto;
     text-align:center;
   }
   @media screen and (max-width:767px) {
