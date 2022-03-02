@@ -287,6 +287,9 @@ img.about_flower-botton {
     z-index: 5;
     margin: 0px auto;
 }
+.about_content >a{
+  text-decoration: none;
+}
 @media screen and (min-width: 768px) {
   .about_content {
     max-width: 72%;
@@ -395,20 +398,20 @@ a.about_btn {
     margin-bottom: 14rem;
   }
   .popular_heading{
-    margin: 0px auto;
-    max-width: 55.5rem;
+    margin-bottom: 7rem;
     text-align: center;
-    margin-bottom: 3rem;
   }
   .popular_heading>h3{
-    font-size: 3rem;
-    font-weight: 55rem;
-    padding-bottom: 1.6rem;
+    font-size: 4.2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
   }
   .popular_heading>p{
     font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 65rem;
+    margin: 0 auto;
     color: #999;
-    margin-bottom: 2rem;
   }
   .popular_list{
     display: flex;
@@ -461,7 +464,7 @@ a.about_btn {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
-  .popular_link:hover .popular_btn{
+  .popular_link:hover .btn{
     background-color: #ff817e;
     color: #fff;
   }
@@ -476,37 +479,35 @@ a.about_btn {
   /* Start Quote */
   .quote{
     background: #fff9f8;
-    padding: 14rem;
-    padding-bottom: 14rem;
-    
+    padding: 2.4rem 0;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
   }
   .quote_inner{
-    margin-bottom: 6rem;
+    padding-top: 3rem;
     text-align: center;
     font-size: 1.3rem;
   }
   .quote_img{
+    padding: 2.4rem 0;
     margin: 0 auto;
   }
   .quote_content{
-    max-width: 80%;
+    max-width: 96rem;
     text-align: center;
-    margin: 5rem auto;
-    font-size: 1.4rem;
-    line-height: 1.8;
+    margin: 5px auto;
+    padding-bottom: 2rem;
   }
   .quote_author{
     display: block;
     max-width: 100%;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 15px auto;
     border: 1px solid #fbf5ed;
     border-radius: 50%;
   }
 
   .quote_name{
-    font-size: 1.4rem;
+    padding-bottom: 2rem;
   }
   .quote_dots{
     display: flex;
@@ -634,85 +635,78 @@ a.about_btn {
   }
   /* End Experienced Team */
   /* Start Form Contact */
-  .form_contact{
+  .form_contact {
+    background-color: #fff9f8;
     display: flex;
-    padding-bottom: 2rem;
-    flex-wrap: wrap;
   }
-  .contact_img{
+  .contact_img {
     width: 40%;
   }
-  .contact_img img{
+  .contact_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .form{
+  .contact_form {
     padding: 10rem;
     width: 60%;
-    background-color: #fff9f8;
   }
-  
-  .form_group>.input_single{
-    width: 92%;
-  }
-  .form_group>input{
-      font-size: 1.6rem;
-      padding: 1.5rem ;
-      margin-bottom: 2rem;
-      border: none;
-      background-color: #fff9f8;
-      border-bottom: 1px solid #999;
-      width: 45%;
-      margin-left: 1rem;
-      
-  }
-  .select_service{
-    font-size: 1.6rem;
-    padding: 1.5rem ;
-    margin-bottom: 2rem;
-    border: none;
-    background-color: #fff9f8;
-    border-bottom: 1px solid #999;
-    width: 45%;
-    margin-left: 1rem;
-    color: #666;
-  }
-  
-  .contact_btn>button{
-    padding: 1.2rem;
-    color: #fff;
-    border: none;
-    background-color: #ff817e;
+  .contact_form input,
+  .contact_form select {
+    text-transform: uppercase;
+    color: var(--gray-light);
+    font-size: 1.2rem;
+    background-color: transparent;
+    padding: 1.5rem 0;
+    border: 0;
+    border-bottom: 1px solid currentColor;
+    width: 100%;
+    border-radius: 0;
     outline: none;
-    border-radius: 1.2rem;
-    font-size: 1.4rem;
+    -webkit-appearance: none;
+    font-family: var(--primary-font);
   }
-  @media screen and (max-width: 767px){
-    .contact_img{
-      width: 100%;
-    }
-    .contact_img img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .form{
-      width: 100%;
-      background-color: #fff9f8;
-    }
-    .form_group>input{
-      width: 100%;
-      
+
+  .form_contact .form-group {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
   }
-  .select_service{
-    width:100%;
+  .form_contact .form-group .custom-input,
+  .form_contact .form-group input,
+  .form_contact .form-group select {
+    width: calc(50% - 1rem);
   }
-  .form_group>.input_single{
+  .form_contact .form-group .custom-input {
+    position: relative;
+  }
+  .form_contact .form-group .custom-input input {
     width: 100%;
   }
-   
+  .form_contact .form-group .custom-input i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
   }
+  .form_contact .form-single {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+  }
+  @media screen and (max-width: 1023px) {
+    .form_contact {
+      flex-direction: column;
+    }
+    .form_contact > * {
+      width: 100%;
+    }
+    .contact_form {
+      padding: 2rem;
+    }
+  }
+  
   /* End Form Contact */
   /* Start Lastest */
   .text_lastest{
@@ -726,88 +720,83 @@ a.about_btn {
   .gettouch{
     padding-bottom: 14rem;
   }
-  .touch_form{
+
+  .gettouch .container{
     max-width: 100rem;
-    margin: 0 auto;
+  }
+  .touch_form{
     display: flex;
+    justify-content: space-between;
     flex-flow: row wrap;
   }
-  .touch_info{
-    width: 50%;
-    padding-left: 5rem;
+  .touch_content {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
   }
-  .touch_info input,
-.touch_info textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 2rem;
-  border: 1px solid #eee;
-  padding: 1.5rem;
-  font-size: 1.4rem;
-  font-weight: 300;
-  color: #999;
-  outline: none;
-}
-
-.touch_info textarea {
-  resize: none;
-  min-height: 15rem;
-  margin-bottom: 3.5rem;
-}
-.item_address {
-  display: flex;
-  align-items: center;
-}
-.item_address i {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 5rem;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ff817e;
-  flex-shrink: 0;
-  margin-right: 2.5rem;
-  font-size: 2rem;
-}
-.touch_address{
-  width: 30%;
-  margin-right: 8rem;
-}
-.touch_text {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  color: #999;
-}
-.touch_text a {
-  text-decoration: none;
-  display: block;
-  color: #999;
-  margin: 5px 0;
-}
-.item_address:nth-of-type(2) {
-  margin: 4rem 0;
-}
-.touch_btn{
-      border: 0.1rem solid;
-      border-radius: 5rem;
-      text-decoration: none;
-      padding: 1.5rem 2rem;
-      background-color: #ff817e;
-      color: #fff;
-      margin-right: 1.5rem;
-}
-@media screen and (max-width: 768px) {
-  .touch_address{
+  .touch_info, .touch_form {
     width: 100%;
-    margin-left: 5rem;
     margin-bottom: 3rem;
   }
-  .touch_info{
-    width: 100%;
+  @media screen and (min-width: 768px) {
+    .touch_info {
+      width: 35%;
+    }
+    .touch_form {
+      width: 65%;
+      padding-left: 12rem;
+    }
   }
-}
+  .touch_form input,
+  .touch_form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    border: 1px solid #eee;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #999;
+    outline: none;
+  }
+ 
+  .touch_form textarea {
+    resize: none;
+    min-height: 15rem;
+    margin-bottom: 3.5rem;
+  }
+  .touch_item {
+    display: flex;
+    align-items: center;
+  }
+  .touch_item i {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff817e;
+    flex-shrink: 0;
+    margin-right: 2.5rem;
+    font-size: 2rem;
+  }
+  .touch_text {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #999;
+  }
+  .touch_text a {
+    display: block;
+    color: #999;
+    text-decoration: none;
+    margin: 5px 0;
+  }
+  .touch_item:nth-of-type(2) {
+    margin: 4rem 0;
+  }
+  
   /* End Get In Touch */
 
   /* Start Footer */
@@ -862,6 +851,12 @@ a.about_btn {
   .footer_botton{
     margin: 3rem auto;
     text-align:center;
+  }
+  @media screen and (max-width:767px) {
+    .footer_menu{
+      display: none;
+    }
+    
   }
   /* End Footer */
   
